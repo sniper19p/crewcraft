@@ -29,7 +29,9 @@ const {
       const nowTimestamp = Math.floor(Date.now() / 1000);
   
       const lastUpdateStr = lastUpdateTimestamp ? `<t:${lastUpdateTimestamp}:R>` : 'never';
-  
+      
+let playerList = response.players.sample ? response.players.sample.map(player => player.name).join(', ') : 'none';
+console.log(playerList);
       const embed = new EmbedBuilder()
         .setTitle('Minecraft Server Ping and Status')
         .setDescription(`Latency to ${SERVER_IP}: ${response.roundTripLatency}ms`)
@@ -38,6 +40,7 @@ const {
           { name: 'MOTD', value: `${response.motd.clean}`, inline: true },
           { name: 'Version', value: `${response.version.name}`, inline: true },
           { name: 'Last Update', value: `${lastUpdateStr}`, inline: true },
+          { name: 'Players', value: `${playerList}`, inline: true },
         )
         .setColor('Green');
   
@@ -54,7 +57,6 @@ const {
       const nowTimestamp = Math.floor(Date.now() / 1000);
   
       const lastUpdateStr = lastUpdateTimestamp ? `<t:${lastUpdateTimestamp}:R>` : 'never';
-
   
       const embed = new EmbedBuilder()
         .setTitle('Error')
@@ -75,7 +77,6 @@ const {
       lastUpdateTimestamp = nowTimestamp;
     }
   }
-
   
-
-client.login('MTAwMDA0NzgzNTAxMTYyOTExNg.GhyFrH.yyf6L9RQz_upmuvpAuVRtpCmBmAEQUj5K0pUP8');
+  client.login('MTAwMDA0NzgzNTAxMTYyOTExNg.GhyFrH.yyf6L9RQz_upmuvpAuVRtpCmBmAEQUj5K0pUP8');
+  
