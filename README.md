@@ -1,4 +1,4 @@
-Discord Minecraft Server Status Bot
+#Discord Minecraft Server Status Bot#
 This bot uses the discord.js and minecraft-server-util packages to retrieve and display the status of a Minecraft server in a Discord channel.
 
 Getting Started
