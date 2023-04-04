@@ -44,7 +44,7 @@ console.log(playerList);
         )
         .setColor('Green');
   
-      const channel = client.channels.cache.get('1090993817164980265');
+      const channel = client.channels.cache.get('channel id');
       let message = await channel.messages.fetch({ limit: 1 }).then(messages => messages.first());
       if (message && message.author.id === client.user.id) {
         await message.edit({ embeds: [embed] });
@@ -66,7 +66,7 @@ console.log(playerList);
         )
         .setColor('Red');
   
-      const channel = client.channels.cache.get('1090993817164980265');
+      const channel = client.channels.cache.get('channel id');
       let message = await channel.messages.fetch({ limit: 1 }).then(messages => messages.first());
       if (message && message.author.id === client.user.id) {
         await message.edit({ embeds: [embed] });
