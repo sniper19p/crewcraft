@@ -4,7 +4,7 @@ This is a Discord bot that displays the status of a Minecraft server. It uses th
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/your-username/minecraft-server-discord-bot.git`
+1. Clone this repository: `git clone https://github.com/sniper19p/crewcraft.git`
 2. Install the dependencies: `npm install`
 3. Set up a new Discord bot and obtain its token. You can follow [these instructions](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) to create a new bot and [these instructions](https://discordjs.guide/token/) to obtain its token.
 4. Set the bot token as an environment variable: `export DISCORD_TOKEN=your-bot-token`
