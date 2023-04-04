@@ -78,5 +78,5 @@ console.log(playerList);
     }
   }
   
-  client.login('MTAwMDA0NzgzNTAxMTYyOTExNg.GhyFrH.yyf6L9RQz_upmuvpAuVRtpCmBmAEQUj5K0pUP8');
+  client.login('Your token');
   
