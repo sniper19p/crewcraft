@@ -12,7 +12,7 @@ const {
     partials: [Object.keys(Partials)],
   });
   
-  const SERVER_IP = 'DutchDeveloper.Playit.gg';
+  const SERVER_IP = 'Minecraft ip';
   const UPDATE_INTERVAL = 60000;
   
   let lastUpdateTimestamp = null;
